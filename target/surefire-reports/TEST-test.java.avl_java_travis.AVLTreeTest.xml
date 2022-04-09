@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="test.java.avl_java_travis.AVLTreeTest" time="0.03" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="test.java.avl_travis.AVLTreeTest" time="0.03" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\Java\jdk1.8.0_202\jre\bin"/>
     <property name="java.vm.version" value="25.202-b08"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\Users\ASUS\eclipse-workspace\avl_java_travis"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Users\ASUS\eclipse-workspace\avl_travis"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\Users\ASUS\eclipse-workspace\avl_java_travis"/>
+    <property name="user.dir" value="D:\Users\ASUS\eclipse-workspace\avl_travis"/>
     <property name="java.runtime.version" value="1.8.0_202-b08"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="D:\Java\jdk1.8.0_202\jre\lib\endorsed"/>
@@ -65,6 +65,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="test.java.avl_java_travis.AVLTreeTest" name="testRoot" time="0.03"/>
-  <testcase classname="test.java.avl_java_travis.AVLTreeTest" name="testTreeHieght" time="0"/>
+  <testcase classname="test.java.avl_travis.AVLTreeTest" name="testRoot" time="0.03"/>
+  <testcase classname="test.java.avl_travis.AVLTreeTest" name="testTreeHieght" time="0"/>
 </testsuite>

@@ -1,11 +1,11 @@
-package test.java.avl_java_travis;
+package test.java.avl_travis;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import main.java.avl_java_travis.AVLTree;
+import main.java.avl_travis.AVLTree;
 
 public class AVLTreeTest {
 
