@@ -5,7 +5,7 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import main.java.avl_java_travis.AVLTree;
+import main.java.avl_java_travis_cli.AVLTree;
 
 public class AVLTreeTest {
 
