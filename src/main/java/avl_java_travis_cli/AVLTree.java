@@ -1,4 +1,4 @@
-package main.avl_java_travis_cli;
+package main.java.avl_java_travis_cli;
 
 public class AVLTree {
 
