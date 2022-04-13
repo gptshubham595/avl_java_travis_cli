@@ -1,11 +1,11 @@
-package test.java.avl_java_travis_cli;
+package test.avl_java_travis_cli;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import main.java.avl_java_travis_cli.AVLTree;
+import main.avl_java_travis_cli.AVLTree;
 
 public class AVLTreeTest {
 
@@ -39,7 +39,7 @@ public class AVLTreeTest {
 	public void testFind3() {
 		// this array in this order allows to pass in all branches
 		// of the insertion algorithm
-		int[] array = { 9, 19,29, 39, 49, 24 };
+		int[] array = { 9, 19, 29, 39, 49, 24 };
 		AVLTree tree = new AVLTree();
 
 		for (int i = 0; i < array.length; i++) {
@@ -48,11 +48,12 @@ public class AVLTreeTest {
 		assertNotNull(tree.find(9));
 
 	}
+
 	@Test
 	public void testFind4() {
 		// this array in this order allows to pass in all branches
 		// of the insertion algorithm
-		int[] array = { 9,  29, 39, 49, 24 ,1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,19,20,21,22};
+		int[] array = { 9, 29, 39, 49, 24, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 };
 		AVLTree tree = new AVLTree();
 
 		for (int i = 0; i < array.length; i++) {
@@ -61,25 +62,27 @@ public class AVLTreeTest {
 		assertNotNull(tree.find(22));
 
 	}
+
 	@Test
 	public void testFind5() {
 		// this array in this order allows to pass in all branches
 		// of the insertion algorithm
-		int[] array = { 9, 19, 29, 39, 49, 24 ,23,25,26,27,28,30,31,32,33,34,35,36,37,38};
+		int[] array = { 9, 19, 29, 39, 49, 24, 23, 25, 26, 27, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38 };
 		AVLTree tree = new AVLTree();
 
 		for (int i = 0; i < array.length; i++) {
 			tree.insert(array[i]);
 		}
-		assertEquals(tree.find(90),null);
+		assertEquals(tree.find(90), null);
 
 	}
+
 	@Test
 	public void testFind6() {
 		// this array in this order allows to pass in all branches
 		// of the insertion algorithm
 		AVLTree tree = new AVLTree();
-		assertEquals(tree.find(9050),null);
+		assertEquals(tree.find(9050), null);
 
 	}
 
@@ -108,7 +111,6 @@ public class AVLTreeTest {
 		}
 		assertEquals(tree.getRoot(), tree.find(3001));
 	}
-
 
 	@Test
 	public void testTreeHeight() {
@@ -196,6 +198,47 @@ public class AVLTreeTest {
 		}
 
 		assertEquals(tree.getBalance(tree.find(60)), 0);
+	}
+
+	@Test
+	public void testingEqualsItself() {
+		AVLTree tree = new AVLTree();
+		assertEquals(tree, tree);
+	}
+
+	@Test
+	public void testingDefaultConstructor() {
+		AVLTree tree = new AVLTree();
+		assertNotNull(tree);
+	}
+
+	@Test
+	public void testingIntegerConstructor() {
+		AVLTree tree = new AVLTree();
+		tree.insert(5);
+		assertEquals(tree.getRoot(), tree.find(5));
+	}
+
+	@Test
+	public void testingGetFunction() {
+		AVLTree tree = new AVLTree();
+		tree.insert(10);
+		assertNotNull(tree.getRoot());
+	}
+
+	@Test
+	public void testingInsertFunction() {
+		AVLTree tree = new AVLTree();
+		tree.insert(10);
+		assertEquals(tree.find(10), tree.getRoot());
+	}
+
+	@Test
+	public void testingInsertDupFunction() {
+		AVLTree tree = new AVLTree();
+		tree.insert(10);
+		tree.insert(10);
+		assertEquals(tree.find(10), tree.getRoot());
 	}
 
 }
