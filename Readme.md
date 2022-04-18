@@ -12,7 +12,7 @@
 | ----------------------------------|:--------------------------------------------------------------------------:| ------------------:| -----------:| -------------:|
 | main.java.avl_java_travis_cli.AVLTree | LINE;BRANCH;EXCEPTION;WEAKMUTATION;OUTPUT;METHOD;METHODNOEXCEPTION;CBRANCH | 0.9424876412429378 | 378         | 353           | 
 
-A Error to detect is Duplicate Key throw error
+- A Error to detect is Duplicate Key throw error
 
 ```diff
 - [ERROR] Tests run: 21, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.573 s <<< FAILURE! - in test.java.avl_java_travis_cli.AVLTreeTest
